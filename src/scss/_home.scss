@@ -1,0 +1,68 @@
+.firstScreen {
+  padding: 210px 0 35px;
+  background: no-repeat url("../assets/images/home/home.jpeg") center/cover;
+
+  .plants {
+    margin-top: 90px;
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+}
+
+.types {
+  padding: 40px 0 245px;
+
+  .link {
+    margin: 24px 0 40px;
+  }
+
+  .h6 {
+    color: #000;
+    margin-bottom: 100px;
+    max-width: 432px;
+    text-align: center;
+  }
+
+  .row {
+    margin-top: 40px;
+    .col {
+      position: relative;
+      transition: all 0.3s linear;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .text-block {
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 24px 0 24px 24px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .types {
+    padding-bottom: 100px;
+    .h2 {
+      text-align: center;
+    }
+
+    .col {
+      margin-bottom: 40px;
+    }
+  }
+}

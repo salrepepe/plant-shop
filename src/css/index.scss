@@ -1,0 +1,132 @@
+@import url("../assets/fonts/SFPro/stylesheet.css");
+@import url("../assets/libs/bootstrap/bootstrap-grid.min.css");
+
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/service";
+@import "../scss/shop";
+@import "../scss/location";
+
+:root {
+  --color-primary: hsl(146, 22%, 27%);
+  --color-secondary: #b7eaaf;
+  --color-gradient-green: linear-gradient(
+    90deg,
+    rgba(127, 202, 33, 0.8) 0%,
+    #105200 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display";
+  color: #fff;
+}
+
+.h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+  margin-bottom: 40px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 60px;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h3.subtitle {
+  max-width: 500px;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 18px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.link {
+  color: #b7eaaf;
+  text-decoration: none;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background: #375739;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  &:hover {
+    color: #000 !important;
+    background: var(--color-secondary);
+  }
+}
+
+.btn-large {
+  padding: 15.5px 61px;
+  border-radius: 40px;
+  font-size: 24px;
+}
+
+.btn.btn-secondary {
+  border: 1px solid #fff;
+  background: #00000080;
+  color: #fff;
+
+  &:hover {
+    background: #ffffff80;
+  }
+}
+
+.btn.btn-third {
+  background: var(--color-gradient-green);
+
+  &:hover {
+    background: var(--color-primary);
+  }
+}
+
+.btn.btn-small {
+  padding: 10px 19px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+}
